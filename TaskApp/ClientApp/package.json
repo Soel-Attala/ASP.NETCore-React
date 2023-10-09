@@ -1,7 +1,16 @@
 {
-  "name": "taskapp",
-  "version": "0.1.0",
-  "private": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "http-proxy-middleware": "^2.0.6",
@@ -41,11 +50,18 @@
     "nan": "^2.17.0",
     "typescript": "^4.9.5"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "name": "taskapp",
   "overrides": {
     "autoprefixer": "10.4.5",
     "nth-check": "2.1.1",
     "webpack": "5.81.0"
   },
+  "private": true,
   "scripts": {
     "prestart": "node aspnetcore-https && node aspnetcore-react",
     "start": "rimraf ./build && react-scripts start",
@@ -54,21 +70,5 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src/"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "version": "0.1.0"
 }

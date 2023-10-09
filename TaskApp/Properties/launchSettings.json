@@ -9,13 +9,13 @@
   },
   "profiles": {
     "TaskApp": {
-      "commandName": "Project",
-      "launchBrowser": true,
       "applicationUrl": "https://localhost:7028;http://localhost:5039",
+      "commandName": "Project",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
-      }
+      },
+      "launchBrowser": true
     },
     "IIS Express": {
       "commandName": "IISExpress",
