@@ -35,8 +35,8 @@ namespace TaskApp.Controllers
         }
 
         [HttpDelete]
-        [Route("EndTask/{id:int}")]
-        public async Task<IActionResult> EndTask(int id)
+        [Route("Delete/{id:int}")]
+        public async Task<IActionResult> Delete(int id)
         {
             Tasks task = _appContext.Tasks.Find(id);
 

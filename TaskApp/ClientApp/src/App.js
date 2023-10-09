@@ -32,7 +32,7 @@ const App = () => {
 
     const saveTask = async (e) => {
         e.preventDefault()
-        const response = await fetch("api/task/Save", {
+        const response = await fetch("api/tasks/save/", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
@@ -45,6 +45,19 @@ const App = () => {
             await showTasks();
         }
     }
+
+    const endTask = async (id) => {
+
+        const response = await fetch("api/tasks/delete/" +id, {
+            method: "DELETE",
+
+        })
+
+        if (response.ok) {
+            await showTasks();
+        }
+    }
+
 
 
 
@@ -69,11 +82,11 @@ const App = () => {
                         {
                             tasks.map(
                                 (item) => (
-                                    <div key={item.IdTask} className="list-group-item list-group-item-action">
+                                    <div key={item.idTask} className="list-group-item list-group-item-action">
                                         <h5 className="text-primary">{item.description}</h5>
                                         <div className="d-flex justify-content-between">
-                                            <small className="text-muted">{formatDate(item.RegisterDate)}</small>
-                                            <button className="btn btn-sm btn-outline-danger">End Task</button>
+                                            <small className="text-muted">{formatDate(item.registerDate)}</small>
+                                            <button onClick={()=>endTask(item.idTask)} className="btn btn-sm btn-outline-danger">End Task</button>
                                         </div>
 
 
