@@ -1,22 +1,44 @@
-import React, { Component } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import AppRoutes from './AppRoutes';
-import { Layout } from './components/Layout';
-import './custom.css';
+import { Container, Row, Card, CardHeader, Button, CardBody, Col } from "reactstrap";
+import ContactsTable from "./components/ContactsTable";
+import { useEffect, useState } from "react";
 
-export default class App extends Component {
-  static displayName = App.name;
+const App = () => {
 
-  render() {
+    const [contacts, setContacts] = useState([])
+
+    const showContacts = async () => {
+        const response = await fetch("/api/contact/List");
+        if (response.ok) {
+            const data = await response.json();
+            setContacts(data)
+        } else {
+            console.log("Status Code: " + response.status)
+        }
+    }
+
+    useEffect(() => {
+        showContacts()
+    }, [])
+
     return (
-      <Layout>
-        <Routes>
-          {AppRoutes.map((route, index) => {
-            const { element, ...rest } = route;
-            return <Route key={index} {...rest} element={element} />;
-          })}
-        </Routes>
-      </Layout>
-    );
-  }
+        <Container>
+            <Row className="mt-5">
+                <Col sm="12">
+                    <Card>
+                        <CardHeader>
+                            <h5>Contact List</h5>
+                        </CardHeader>
+                        <CardBody>
+                            <Button size="sm" color="success">New Contact</Button>
+                            <hr></hr>
+                            <ContactsTable data={contacts} />
+
+                        </CardBody>
+                    </Card>
+                </Col>
+            </Row>
+        </Container >
+    )
 }
+
+export default App;

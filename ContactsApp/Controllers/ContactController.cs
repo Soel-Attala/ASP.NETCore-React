@@ -52,11 +52,11 @@ namespace ContactsApp.Controllers
         }
 
         [HttpDelete]
-        [Route("Delete")]
+        [Route("Delete{id:int}")]
 
         public async Task<IActionResult> Delete(int id)
         {
-            Contact contact = await _dbcontext.Contacts.Find(id);
+            Contact contact = _dbcontext.Contacts.Find(id);
             _dbcontext.Contacts.Remove(contact);
             await _dbcontext.SaveChangesAsync();
 
