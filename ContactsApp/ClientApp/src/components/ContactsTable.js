@@ -2,7 +2,14 @@
 
 
 
-const ContactsTable = ({ data }) => {
+const ContactsTable = ({ data, setEdit, showModal, setShowModal,deleteContact }) => {
+
+
+    const sendData = (contact) => {
+        setEdit(contact)
+        setShowModal(!showModal)
+    }
+
     return (
         <Table striped responsive>
             <thead>
@@ -27,8 +34,8 @@ const ContactsTable = ({ data }) => {
                                 <td>{item.email}</td>
                                 <td>{item.phone}</td>
                                 <td>
-                                    <Button color="primary" size="sm" className="me-2">Edit</Button>
-                                    <Button color="danger" size="sm">Delete</Button>
+                                    <Button color="primary" size="sm" className="me-2" onClick={()=>sendData(item) }>Edit</Button>
+                                    <Button color="danger" size="sm" onClick={()=>deleteContact(item.contactId) }>Delete</Button>
                                 </td>
 
                             </tr>

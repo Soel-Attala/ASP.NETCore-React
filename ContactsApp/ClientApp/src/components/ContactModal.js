@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { Modal, Form, FormGroup, Input, Label, ModalBody, ModalHeader, ModalFooter, Button } from "reactstrap";
 
 const contactModel = {
@@ -9,7 +9,7 @@ const contactModel = {
 }
 
 
-const ContactModal = ({ showModal, setShowModal, saveContact }) => {
+const ContactModal = ({ showModal, setShowModal, saveContact, edit, setEdit,editContact }) => {
 
     const [contact, setContact] = useState(contactModel);
     const updateData = (e) => {
@@ -24,14 +24,37 @@ const ContactModal = ({ showModal, setShowModal, saveContact }) => {
     const sendingData = () => {
         if (contact.contactId == 0) {
             saveContact(contact)
+        } else {
+            editContact(contact)
         }
+        setContact(contactModel)
     }
+
+    useEffect(() => {
+        if (edit != null) {
+            setContact(edit)
+        } else {
+            setContact(contactModel)
+        }
+    }, [edit])
+
+
+    const closeModal= () => {
+        setShowModal(!showModal)
+        setEdit(null)
+    }
+
+
+
 
     return (
         <Modal isOpen={showModal}>
             <ModalHeader>
                 New Contact
             </ModalHeader>
+            {contact.contactId == 0 ?"New Contact" : "Edit Contact" }
+            
+
             <ModalBody>
                 <Form>
                     <FormGroup>
@@ -50,7 +73,7 @@ const ContactModal = ({ showModal, setShowModal, saveContact }) => {
             </ModalBody>
             <ModalFooter>
                 <Button color="primary" size="sm" onClick={sendingData}>Save</Button>
-                <Button color="danger" size="sm" onClick={() => setShowModal(!showModal)}>Close</Button>
+                <Button color="danger" size="sm" onClick={closeModal}>Close</Button>
             </ModalFooter>
 
         </Modal >
