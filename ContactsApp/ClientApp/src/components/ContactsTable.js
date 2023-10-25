@@ -1,5 +1,4 @@
-﻿import { Button } from "bootstrap";
-import { Table } from "reactstrap";
+﻿import { Table, Button } from "reactstrap";
 
 
 

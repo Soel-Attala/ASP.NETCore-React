@@ -12,9 +12,9 @@ namespace ContactsApp.Controllers
     {
         private readonly ContactDbContext _dbcontext;
 
-        public ContactController(ContactDbContext dbcontext)
+        public ContactController(ContactDbContext context)
         {
-            _dbcontext = dbcontext;
+            _dbcontext = context;
         }
 
 
