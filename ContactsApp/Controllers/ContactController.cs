@@ -52,7 +52,7 @@ namespace ContactsApp.Controllers
         }
 
         [HttpDelete]
-        [Route("Delete{id:int}")]
+        [Route("Delete/{id:int}")]
 
         public async Task<IActionResult> Delete(int id)
         {
