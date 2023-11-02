@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalesSystem.BLL\SalesSystem.BLL.csproj" />
+    <ProjectReference Include="..\SalesSystem.Entity\SalesSystem.Entity.csproj" />
+    <ProjectReference Include="..\SalesSystem.IOC\SalesSystem.IOC.csproj" />
+  </ItemGroup>
+
+</Project>

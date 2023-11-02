@@ -1,0 +1,11 @@
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\bin\Debug\net6.0\SalesSystem.IOC.deps.json
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\bin\Debug\net6.0\SalesSystem.IOC.dll
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\bin\Debug\net6.0\SalesSystem.IOC.pdb
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\SalesSystem.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\SalesSystem.IOC.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\SalesSystem.IOC.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\SalesSystem.IOC.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\SalesSystem.IOC.dll
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\refint\SalesSystem.IOC.dll
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\SalesSystem.IOC.pdb
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.IOC\obj\Debug\net6.0\ref\SalesSystem.IOC.dll

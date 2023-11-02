@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalesSystem.BLL\SalesSystem.BLL.csproj" />
+    <ProjectReference Include="..\SalesSystem.DAL\SalesSystem.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
