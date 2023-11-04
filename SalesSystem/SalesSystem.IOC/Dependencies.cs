@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SalesSystem.DAL.DBContext;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace SalesSystem.IOC
 {
     internal class Dependencies
