@@ -20,9 +20,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace SalesSystem.IOC
 {
-    public class Dependencies
+    public static class Dependencies
     {
-        public static void DependenciesInjection(IServiceCollection services, IConfiguration configuration)
+        public static void DependenciesInjection(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<SALESDBContext>(options =>
             {
