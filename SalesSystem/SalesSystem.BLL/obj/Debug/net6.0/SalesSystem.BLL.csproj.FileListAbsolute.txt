@@ -9,3 +9,9 @@ C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem
 C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\obj\Debug\net6.0\refint\SalesSystem.BLL.dll
 C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\obj\Debug\net6.0\SalesSystem.BLL.pdb
 C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\obj\Debug\net6.0\ref\SalesSystem.BLL.dll
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\bin\Debug\net6.0\SalesSystem.DAL.dll
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\bin\Debug\net6.0\SalesSystem.Entity.dll
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\bin\Debug\net6.0\SalesSystem.DAL.pdb
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\bin\Debug\net6.0\SalesSystem.Entity.pdb
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\obj\Debug\net6.0\SalesSystem.BLL.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.BLL\obj\Debug\net6.0\SalesSystem.BLL.csproj.CopyComplete
