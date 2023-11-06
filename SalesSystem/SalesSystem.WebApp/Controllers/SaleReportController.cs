@@ -2,9 +2,9 @@
 
 namespace SalesSystem.WebApp.Controllers
 {
-    public class UserController1 : Controller
+    public class SaleReportController1 : Controller
     {
-        public IActionResult Index()
+        public IActionResult SaleReport()
         {
             return View();
         }

@@ -54,8 +54,8 @@
                 </a>
                 <div id="collapseAdministracion" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="@Url.Action("Index","User")">Users</a>
-                        <a class="collapse-item" href="@Url.Action("Index","Business")">Business</a>
+                        <a class="collapse-item" href="@Url.Action("Users","User")">Users</a>
+                        <a class="collapse-item" href="@Url.Action("Business","Business")">Business</a>
                     </div>
                 </div>
             </li>
@@ -68,8 +68,8 @@
                 </a>
                 <div id="collapseInventario" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="@Url.Action("Index","Categories")">Categories</a>
-                        <a class="collapse-item" href="@Url.Action("Index","Products")">Products</a>
+                        <a class="collapse-item" href="@Url.Action("Categories","Categories")">Categories</a>
+                        <a class="collapse-item" href="@Url.Action("Products","Products")">Products</a>
                     </div>
                 </div>
             </li>
@@ -96,7 +96,7 @@
                 </a>
                 <div id="collapseReportes" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="reporte_venta.html">Reporte de Ventas</a>
+                        <a class="collapse-item" href="@Url.Action("SaleReport","SaleReport")">Reporte de Ventas</a>
                     </div>
                 </div>
             </li>

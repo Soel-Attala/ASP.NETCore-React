@@ -2,7 +2,7 @@
 
 namespace SalesSystem.WebApp.Controllers
 {
-    public class CategoriesController1 : Controller
+    public class UserController : Controller
     {
         public IActionResult Index()
         {
