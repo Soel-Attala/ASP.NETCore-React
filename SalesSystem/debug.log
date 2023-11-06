@@ -1,0 +1,3 @@
+[1106/094344.027:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1106/094344.152:ERROR:viz_main_impl.cc(162)] Exiting GPU process due to errors during initialization
+[1106/094344.263:ERROR:gpu_init.cc(441)] Passthrough is not supported, GL is disabled
