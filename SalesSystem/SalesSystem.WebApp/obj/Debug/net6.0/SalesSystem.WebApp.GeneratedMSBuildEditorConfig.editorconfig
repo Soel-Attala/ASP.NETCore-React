@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/BusinessController1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NDb250cm9sbGVyMVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/CategoriesController1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc0NvbnRyb2xsZXIxXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/DashboardController1/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkQ29udHJvbGxlcjFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
