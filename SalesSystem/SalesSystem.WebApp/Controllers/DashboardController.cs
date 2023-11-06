@@ -4,7 +4,7 @@ namespace SalesSystem.WebApp.Controllers
 {
     public class DashboardController1 : Controller
     {
-        public IActionResult Index()
+        public IActionResult Dashboard()
         {
             return View();
         }

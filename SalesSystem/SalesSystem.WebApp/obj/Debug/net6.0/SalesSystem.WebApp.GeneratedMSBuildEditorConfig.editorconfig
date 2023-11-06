@@ -16,16 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/BusinessController/Business.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NDb250cm9sbGVyXEJ1c2luZXNzLmNzaHRtbA==
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Business/Business.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzaW5lc3NcQnVzaW5lc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/CategoriesController/Categories.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc0NvbnRyb2xsZXJcQ2F0ZWdvcmllcy5jc2h0bWw=
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Categories/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/DashboardController/Dashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkQ29udHJvbGxlclxEYXNoYm9hcmQuY3NodG1s
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Dashboard/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Home/Index.cshtml]
@@ -36,20 +36,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/ProductsController/Products.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNDb250cm9sbGVyXFByb2R1Y3RzLmNzaHRtbA==
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Products/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/SaleReportController/SaleReport.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVJlcG9ydENvbnRyb2xsZXJcU2FsZVJlcG9ydC5jc2h0bWw=
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/SaleReport/SaleReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZVJlcG9ydFxTYWxlUmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/SalesController/NewSale.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNDb250cm9sbGVyXE5ld1NhbGUuY3NodG1s
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Sales/NewSale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNcTmV3U2FsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/SalesController/SaleHistory.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNDb250cm9sbGVyXFNhbGVIaXN0b3J5LmNzaHRtbA==
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Sales/SaleHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNcU2FsZUhpc3RvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/Shared/Error.cshtml]
@@ -60,8 +60,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/UserController/Users.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckNvbnRyb2xsZXJcVXNlcnMuY3NodG1s
+[C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/User/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Desktop/Programación/ASP.NETCore-React/SalesSystem/SalesSystem.WebApp/Views/_ViewImports.cshtml]

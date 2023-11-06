@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mi Tienda - @ViewData["Index"]</title>
+    <title>Mi Tienda - @ViewData["Title"]</title>
 
     <!-- Custom fonts for this template-->
     <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -83,7 +83,7 @@
                 <div id="collapseVenta" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="@Url.Action("NewSale","Sales")">New Sale</a>
-                        <a class="collapse-item" href="@Url.Action("SaleHistory","Sales")">Sale History</a>
+                        <a class="collapse-item" href="@Url.Action("SaleHistory","Sales")">Sales History</a>
                     </div>
                 </div>
             </li>
@@ -96,7 +96,7 @@
                 </a>
                 <div id="collapseReportes" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="@Url.Action("SaleReport","SaleReport")">Reporte de Ventas</a>
+                        <a class="collapse-item" href="@Url.Action("SaleReport","SaleReport")">Sales Report</a>
                     </div>
                 </div>
             </li>
