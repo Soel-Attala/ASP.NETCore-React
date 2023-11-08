@@ -2,7 +2,7 @@
 
 namespace SalesSystem.WebApp.Controllers
 {
-    public class DashboardController1 : Controller
+    public class DashboardController : Controller
     {
         public IActionResult Dashboard()
         {

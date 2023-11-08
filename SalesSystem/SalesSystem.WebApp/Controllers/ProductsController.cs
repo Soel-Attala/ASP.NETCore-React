@@ -2,7 +2,7 @@
 
 namespace SalesSystem.WebApp.Controllers
 {
-    public class ProductsController1 : Controller
+    public class ProductsController : Controller
     {
         public IActionResult Products()
         {
