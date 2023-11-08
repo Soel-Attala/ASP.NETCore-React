@@ -11,4 +11,9 @@
     <ProjectReference Include="..\SalesSystem.Entity\SalesSystem.Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Implementations\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
 </Project>
