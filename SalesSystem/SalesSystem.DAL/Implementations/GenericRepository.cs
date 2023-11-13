@@ -19,27 +19,65 @@ namespace SalesSystem.DAL.Implementations
             _dbContext = dbContext;
         }
 
-        public Task<TEntity> Get(Expression<Func<TEntity, bool>> filter)
+        public async Task<TEntity> Get(Expression<Func<TEntity, bool>> filter)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TEntity entity = await _dbContext.Set<TEntity>().FirstOrDefaultAsync(filter);
+                return entity;
+            }
+            catch
+            {
+                throw;
+            }
+
         }
-        public Task<TEntity> Create(TEntity entity)
+        public async Task<TEntity> Create(TEntity entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _dbContext.Set<TEntity>().Add(entity);
+                await _dbContext.SaveChangesAsync();
+                return entity;
+            }
+            catch
+            {
+                throw;
+            }
+
         }
-        public Task<bool> Edit(TEntity entity)
+        public async Task<bool> Edit(TEntity entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _dbContext.Set<TEntity>().Update(entity);
+                await _dbContext.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
-        public Task<bool> Delete(TEntity entity)
+        public async Task<bool> Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _dbContext.Set<TEntity>().Remove(entity);
+                await _dbContext.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
-        public Task<IQueryable<TEntity>> GetAll(Expression<Func<TEntity, bool>> filter = null)
+        public async Task<IQueryable<TEntity>> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            IQueryable<TEntity> queryEntity = filter == null ? _dbContext.Set<TEntity>() : _dbContext.Set<TEntity>().Where(filter);
+            return queryEntity;
         }
     }
 }
