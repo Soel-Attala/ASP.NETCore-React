@@ -30,6 +30,7 @@ namespace SalesSystem.IOC
             services.AddScoped<ISalesRepository, SalesRepository>();
 
             services.AddScoped<IMailServices, IMailServices>();
+            services.AddScoped<IFirebaseServices, IFirebaseServices>();
         }
     }
 }
