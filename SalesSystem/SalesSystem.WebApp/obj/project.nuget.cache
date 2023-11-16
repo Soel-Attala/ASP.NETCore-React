@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HvfWYgnl6qoo7G9hnqO4+2nQkI52goUvOdv6/phkEgl68GwwGJQVzgfz0/vq4VxH00qHoxLhiVic+B+LXJGYbA==",
+  "dgSpecHash": "yxSxwZZqwHHmg/4sZF/ivJbTBNjRt7bUqCJGPrCv8XpthtJeEiLWPE7cuKhgnFyaQzhgUD9PAliDXP7fgY4UdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Programación\\ASP.NETCore-React\\SalesSystem\\SalesSystem.WebApp\\SalesSystem.WebApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
