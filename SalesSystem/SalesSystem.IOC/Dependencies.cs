@@ -4,8 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SalesSystem.DAL.Interfaces;
 using SalesSystem.DAL.Implementations;
-//using SalesSystem.BLL.Implementations;
-//using SalesSystem.BLL.Interfaces;
+using SalesSystem.BLL.Interfaces;
+using SalesSystem.BLL.Implementations;
+using SalesSystem.BLL.Interfaces;
 
 
 
@@ -27,6 +28,8 @@ namespace SalesSystem.IOC
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ISalesRepository, SalesRepository>();
+
+            services.AddScoped<IMailServices, IMailServices>();
         }
     }
 }
