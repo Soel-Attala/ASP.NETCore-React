@@ -29,8 +29,10 @@ namespace SalesSystem.IOC
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<ISalesRepository, SalesRepository>();
 
-            services.AddScoped<IMailServices, IMailServices>();
-            services.AddScoped<IFirebaseServices, IFirebaseServices>();
+            services.AddScoped<IMailServices, MailServices>();
+            services.AddScoped<IFirebaseServices, FirebaseServices>();
+
+            services.AddScoped<IUtilityServices, UtilityServices>();
         }
     }
 }

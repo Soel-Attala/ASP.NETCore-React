@@ -261,3 +261,5 @@ C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem
 C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.WebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.WebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.WebApp\obj\Debug\net6.0\SalesSystem.WebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.WebApp\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\Usuario\Desktop\Programación\ASP.NETCore-React\SalesSystem\SalesSystem.WebApp\bin\Debug\net6.0\Firebase.Storage.dll
