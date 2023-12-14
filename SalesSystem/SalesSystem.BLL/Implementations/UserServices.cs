@@ -56,11 +56,56 @@ namespace SalesSystem.BLL.Implementations
                     string urlPicture = await _firebaseServices.UpdateStorage(Picture, "user_folder", PictureName);
                     entity.PhotoUrl = urlPicture;
                 }
-            }
-            catch
-            {
 
+                UserData created_user = await _repository.Create(entity);
+                if (created_user.IdUser == 0)
+                {
+                    throw new TaskCanceledException("User create error");
+                }
+
+                if (UrlMailTemplate != "")
+                {
+                    UrlMailTemplate = UrlMailTemplate.Replace("[email]", created_user.Email).Replace("[password]", generated_key);
+                    string emailhtml = "";
+                    HttpWebRequest request = (HttpWebRequest)WebRequest.Create(UrlMailTemplate);
+                    HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        using (Stream dataStream = response.GetResponseStream())
+                        {
+                            StreamReader readerStream = null;
+                            if (response.CharacterSet != null)
+                            {
+                                readerStream = new StreamReader(dataStream);
+                            }
+                            else
+                            {
+                                readerStream = new StreamReader(dataStream, Encoding.GetEncoding(response.CharacterSet));
+                            }
+
+                            emailhtml = readerStream.ReadToEnd();
+                            response.Close();
+                            readerStream.Close();
+
+                        }
+                    }
+
+                    if (emailhtml != "")
+                    {
+                        await _mailServices.SendMail(created_user.Email, "Account created", emailhtml);
+                    }
+                }
+
+                IQueryable<UserData> query = await _repository.GetAll(u => u.IdUser == created_user.IdUser);
+                created_user = query.Include(r => r.IdRoleNavigation).First();
             }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+
         }
         public Task<UserData> Edit(UserData entity, Stream Picture = null, string PictureName = "")
         {
