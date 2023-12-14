@@ -44,6 +44,21 @@ namespace SalesSystem.BLL.Implementations
             UserData userExist = await _repository.Get(u => u.Email == entity.Email);
             if (userExist == null)
             {
+                throw new TaskCanceledException("The email already exist");
+            }
+            try
+            {
+                string generated_key = _utilityServices.PasswordGenerate();
+                entity.Password = _utilityServices.Sha265Convertion(generated_key);
+                entity.PhotoName = PictureName;
+                if (Picture != null)
+                {
+                    string urlPicture = await _firebaseServices.UpdateStorage(Picture, "user_folder", PictureName);
+                    entity.PhotoUrl = urlPicture;
+                }
+            }
+            catch
+            {
 
             }
         }
