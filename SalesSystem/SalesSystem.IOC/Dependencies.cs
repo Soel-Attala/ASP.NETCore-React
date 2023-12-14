@@ -33,6 +33,7 @@ namespace SalesSystem.IOC
             services.AddScoped<IFirebaseServices, FirebaseServices>();
 
             services.AddScoped<IUtilityServices, UtilityServices>();
+            services.AddScoped<IRoleServices, RoleServices>();
         }
     }
 }

@@ -21,4 +21,8 @@
     <ProjectReference Include="..\SalesSystem.IOC\SalesSystem.IOC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Utilities\Response\" />
+  </ItemGroup>
+
 </Project>
