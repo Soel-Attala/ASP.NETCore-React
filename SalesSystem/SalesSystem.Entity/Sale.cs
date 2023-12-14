@@ -22,7 +22,7 @@ namespace SalesSystem.Entity
         public DateTime? RegistrationDate { get; set; }
 
         public virtual SalesDocumentType? IdSalesDocumentTypeNavigation { get; set; }
-        public virtual UserDatum? IdUserNavigation { get; set; }
+        public virtual UserData? IdUserNavigation { get; set; }
         public virtual ICollection<SaleDetail> SaleDetails { get; set; }
     }
 }

@@ -74,7 +74,7 @@ namespace SalesSystem.BLL.Implementations
                     {
                         using (Stream dataStream = response.GetResponseStream())
                         {
-                            StreamReader readerStream = null;
+                            StreamReader? readerStream = null;
                             if (response.CharacterSet != null)
                             {
                                 readerStream = new StreamReader(dataStream);
@@ -99,6 +99,8 @@ namespace SalesSystem.BLL.Implementations
 
                 IQueryable<UserData> query = await _repository.GetAll(u => u.IdUser == created_user.IdUser);
                 created_user = query.Include(r => r.IdRoleNavigation).First();
+
+                return created_user;
             }
             catch (Exception ex)
             {

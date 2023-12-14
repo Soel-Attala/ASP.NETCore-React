@@ -28,7 +28,7 @@ namespace SalesSystem.DAL.DBContext
         public virtual DbSet<Sale> Sales { get; set; } = null!;
         public virtual DbSet<SaleDetail> SaleDetails { get; set; } = null!;
         public virtual DbSet<SalesDocumentType> SalesDocumentTypes { get; set; } = null!;
-        public virtual DbSet<UserDatum> UserData { get; set; } = null!;
+        public virtual DbSet<UserData> UserData { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -433,7 +433,7 @@ namespace SalesSystem.DAL.DBContext
                     .HasDefaultValueSql("(getdate())");
             });
 
-            modelBuilder.Entity<UserDatum>(entity =>
+            modelBuilder.Entity<UserData>(entity =>
             {
                 entity.HasKey(e => e.IdUser)
                     .HasName("PK__UserData__3717C9827B31E422");

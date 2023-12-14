@@ -8,7 +8,7 @@ namespace SalesSystem.Entity
         public Role()
         {
             RoleMenus = new HashSet<RoleMenu>();
-            UserData = new HashSet<UserDatum>();
+            UserData = new HashSet<UserData>();
         }
 
         public int IdRole { get; set; }
@@ -17,6 +17,6 @@ namespace SalesSystem.Entity
         public DateTime? RegistrationDate { get; set; }
 
         public virtual ICollection<RoleMenu> RoleMenus { get; set; }
-        public virtual ICollection<UserDatum> UserData { get; set; }
+        public virtual ICollection<UserData> UserData { get; set; }
     }
 }
