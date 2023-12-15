@@ -109,14 +109,53 @@ namespace SalesSystem.BLL.Implementations
 
 
         }
-        public Task<UserData> Edit(UserData entity, Stream Picture = null, string PictureName = "")
+        public async Task<UserData> Edit(UserData entity, Stream Picture = null, string PictureName = "")
         {
-            throw new NotImplementedException();
+            UserData userExist = await _repository.Get(u => u.Email == entity.Email && u.IdUser != entity.IdUser);
+            if (userExist == null)
+            {
+                throw new TaskCanceledException("The email already exist");
+            }
+
+            try
+            {
+                IQueryable<UserData> queryEditUser = await _repository.GetAll(u => u.IdUser == entity.IdUser);
+                UserData editUser = queryEditUser.First();
+                editUser.Name = entity.Name;
+                editUser.Email = entity.Email;
+                editUser.Phone = entity.Phone;
+                editUser.IdRole = entity.IdRole;
+
+                if (editUser.PhotoName == "")
+                {
+                    editUser.PhotoName = entity.PhotoName;
+                }
+
+                if (Picture == null)
+                {
+                    string urlPicture = await _firebaseServices.UpdateStorage(Picture, "user_folder", editUser.PhotoName);
+
+                }
+
+                bool response = await _repository.Edit(editUser);
+                if (!response)
+                {
+                    throw new TaskCanceledException("User cant be edited");
+                }
+
+                UserData editedUser = queryEditUser.Include(r => r.IdRoleNavigation).First();
+
+                return editedUser;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         public Task<bool> Delete(int IdUser)
         {
-            throw new NotImplementedException();
+
         }
 
         public Task<UserData> GetByCredentials(string email, string password)
